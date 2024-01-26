@@ -1,0 +1,597 @@
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(v(Int);(a(Ref(Int));(v= 10;(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a))))))))
+
+			[SYMBOL TABLE]
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	v(Int)
+	(a(Ref(Int));(v= 10;(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a)))))))
+
+			[SYMBOL TABLE]
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	v(Int)
+	(a(Ref(Int));(v= 10;(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a)))))))
+
+			[SYMBOL TABLE]
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(a(Ref(Int));(v= 10;(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a)))))))
+
+			[SYMBOL TABLE]
+	v -> 0
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(a(Ref(Int));(v= 10;(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a)))))))
+
+			[SYMBOL TABLE]
+	v -> 0
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	a(Ref(Int))
+	(v= 10;(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a))))))
+
+			[SYMBOL TABLE]
+	v -> 0
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	a(Ref(Int))
+	(v= 10;(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a))))))
+
+			[SYMBOL TABLE]
+	v -> 0
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(v= 10;(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a))))))
+
+			[SYMBOL TABLE]
+	a -> (0, Int)
+	v -> 0
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(v= 10;(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a))))))
+
+			[SYMBOL TABLE]
+	a -> (0, Int)
+	v -> 0
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	v= 10
+	(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a)))))
+
+			[SYMBOL TABLE]
+	a -> (0, Int)
+	v -> 0
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	v= 10
+	(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a)))))
+
+			[SYMBOL TABLE]
+	a -> (0, Int)
+	v -> 0
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a)))))
+
+			[SYMBOL TABLE]
+	a -> (0, Int)
+	v -> 10
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(new(a, 22);(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a)))))
+
+			[SYMBOL TABLE]
+	a -> (0, Int)
+	v -> 10
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	new(a, 22)
+	(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a))))
+
+			[SYMBOL TABLE]
+	a -> (0, Int)
+	v -> 10
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	new(a, 22)
+	(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a))))
+
+			[SYMBOL TABLE]
+	a -> (0, Int)
+	v -> 10
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a))))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))));(print(v);print(rH(a))))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))))
+	(print(v);print(rH(a)))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	Fork the following: (wH(a, 30);(v= 32;(print(v);print(rH(a)))))
+	(print(v);print(rH(a)))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(print(v);print(rH(a)))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(wH(a, 30);(v= 32;(print(v);print(rH(a)))))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(print(v);print(rH(a)))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(wH(a, 30);(v= 32;(print(v);print(rH(a)))))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	print(v)
+	print(rH(a))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	wH(a, 30)
+	(v= 32;(print(v);print(rH(a))))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	print(v)
+	print(rH(a))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	wH(a, 30)
+	(v= 32;(print(v);print(rH(a))))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 22
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	print(rH(a))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 30
+
+			[OUTPUT LOG]
+	10
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(v= 32;(print(v);print(rH(a))))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 30
+
+			[OUTPUT LOG]
+	10
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	print(rH(a))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 30
+
+			[OUTPUT LOG]
+	10
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(v= 32;(print(v);print(rH(a))))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 30
+
+			[OUTPUT LOG]
+	10
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 30
+
+			[OUTPUT LOG]
+	10
+	30
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	v= 32
+	(print(v);print(rH(a)))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 30
+
+			[OUTPUT LOG]
+	10
+	30
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	v= 32
+	(print(v);print(rH(a)))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 10
+
+			[HEAP]
+	1: 30
+
+			[OUTPUT LOG]
+	10
+	30
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(print(v);print(rH(a)))
+
+			[SYMBOL TABLE]
+	a -> (1, Int)
+	v -> 32
+
+			[HEAP]
+	1: 30
+
+			[OUTPUT LOG]
+	10
+	30
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
