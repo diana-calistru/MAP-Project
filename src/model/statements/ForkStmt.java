@@ -32,6 +32,6 @@ public class ForkStmt implements IStmt {
 
     @Override
     public String toString() {
-        return "Fork the following: " + argument.toString();
+        return "fork(" + argument.toString() + ")";
     }
 }

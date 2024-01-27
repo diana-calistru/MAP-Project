@@ -1,6 +1,7 @@
 package model.expressions;
 
 import exceptions.MyException;
+import model.types.BoolType;
 import model.types.IntType;
 import model.types.Type;
 import model.values.BoolValue;
@@ -60,7 +61,7 @@ public class RelationalExp implements Exp {
         typ2 = right.typecheck(typeEnv);
         if(typ1.equals(new IntType())) {
             if (typ2.equals(new IntType())) {
-                return new IntType();
+                return new BoolType();
             }else
                 throw new MyException("second operand is not an integer");
         }else
