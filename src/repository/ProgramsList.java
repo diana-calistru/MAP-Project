@@ -79,7 +79,7 @@ public class ProgramsList {
 
         IStmt stmt = new CompStmt(l1, new CompStmt(l2, new CompStmt(l3, new CompStmt(l4,
                 new CompStmt(l5, new CompStmt(l6, new CompStmt(l7, new CompStmt(l8,
-                        new CompStmt(l13, new CompStmt(l14, new CompStmt(l15, l10)))))))))));
+                        new CompStmt(l13, new CompStmt(l14, new CompStmt(l15, new CompStmt(l10, new PrintStmt(new ValExp(new IntValue(100)))))))))))))));
 
         uncheckedStmtList.add(stmt);
     }
