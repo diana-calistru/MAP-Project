@@ -80,7 +80,8 @@ public class MainGUI extends Application {
             MyList<Value> output = new MyList<>();
             MyDictionary<StringValue, BufferedReader> fileTable = new MyDictionary<>();
             MyHeap<Value> heap = new MyHeap<>();
-            PrgState prg1 = new PrgState(exeStack, symTable, output, selectedProgram, fileTable, heap);
+            MySemaphoreTable semaphoreTable = new MySemaphoreTable();
+            PrgState prg1 = new PrgState(exeStack, symTable, output, selectedProgram, fileTable, heap, semaphoreTable);
             IRepository repo1 = new Repository(prg1, "log1.txt");
             Controller ctr = new Controller(repo1);
 

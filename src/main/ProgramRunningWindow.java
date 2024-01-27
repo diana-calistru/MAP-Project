@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.util.Pair;
 import model.PrgState;
 import model.statements.IStmt;
 import model.values.IntValue;
@@ -20,6 +21,7 @@ import model.values.Value;
 import javafx.scene.control.TableView;
 import utils.MyIDictionary;
 import utils.MyIHeap;
+import utils.MyISemaphoreTable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,10 +42,11 @@ public class ProgramRunningWindow {
     private final ListView<PrgState> prgStateIdsListView;
     private ObservableList<PrgState> prgStateIdsList;
     private final TableView<Map.Entry<String, Value>> symTableView;
-
     private ObservableList<Map.Entry<String, Value>> symTableListItems;
     private final ListView<IStmt> exeStackListView;
     private ObservableList<IStmt> exeStackList;
+    private final TableView<Map.Entry<Integer, Pair<Integer, List<Integer>>>> semaphoreTableView;
+    private ObservableList<Map.Entry<Integer, Pair<Integer, List<Integer>>>> semaphoreTableListItems;
     private final Button oneStepButton;
     private int usedPrgStateId = 0;
 
@@ -58,6 +61,7 @@ public class ProgramRunningWindow {
         this.heapTableView = new TableView<>();
         TableColumn<Map.Entry<Integer, Value>, Integer> addressColumn = new TableColumn<>("Address");
         addressColumn.setCellValueFactory(param -> new SimpleObjectProperty<>(param.getValue().getKey()));
+
         TableColumn<Map.Entry<Integer, Value>, Value> valueColumn = new TableColumn<>("Value");
         valueColumn.setCellValueFactory(param -> new SimpleObjectProperty<>(param.getValue().getValue()));
         heapTableView.getColumns().addAll(addressColumn, valueColumn);
@@ -69,9 +73,22 @@ public class ProgramRunningWindow {
         this.symTableView = new TableView<>();
         TableColumn<Map.Entry<String, Value>, String> idColumn = new TableColumn<>("Id");
         idColumn.setCellValueFactory(param -> new SimpleObjectProperty<>(param.getValue().getKey()));
+
         TableColumn<Map.Entry<String, Value>, Value> valColumn = new TableColumn<>("Value");
         valColumn.setCellValueFactory(param -> new SimpleObjectProperty<>(param.getValue().getValue()));
         symTableView.getColumns().addAll(idColumn, valColumn);
+
+        this.semaphoreTableView = new TableView<>();
+        TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, Integer> indexColumn = new TableColumn<>("Index");
+        indexColumn.setCellValueFactory(param -> new SimpleObjectProperty<>(param.getValue().getKey()));
+
+        TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, Integer> semValueColumn = new TableColumn<>("Value");
+        semValueColumn.setCellValueFactory(param -> new SimpleObjectProperty<>(param.getValue().getValue().getKey()));
+
+        TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, List<Integer>> semListColumn = new TableColumn<>("List of Values");
+        semListColumn.setCellValueFactory(param -> new SimpleObjectProperty<>(param.getValue().getValue().getValue()));
+
+        semaphoreTableView.getColumns().addAll(indexColumn, semValueColumn, semListColumn);
 
         this.exeStackListView = new ListView<>();
         this.oneStepButton = new Button("Run One Step");
@@ -88,6 +105,7 @@ public class ProgramRunningWindow {
         Label l4 = new Label("Output");
         Label l5 = new Label("Symbol Table");
         Label l6 = new Label("File Table");
+        Label l7 = new Label("Semaphore Table");
         // Set up UI components
         VBox labeled1 = new VBox(l1, prgStateIdsListView);
         VBox labeled2 = new VBox(l2, exeStackListView);
@@ -95,6 +113,7 @@ public class ProgramRunningWindow {
         VBox labeled4 = new VBox(l4, outListView);
         VBox labeled5 = new VBox(l5, symTableView);
         VBox labeled6 = new VBox(l6, fileTableListView);
+        VBox labeled7 = new VBox(l7, semaphoreTableView);
 
         HBox layout1 = new HBox();
         layout1.getChildren().addAll(
@@ -123,6 +142,7 @@ public class ProgramRunningWindow {
                 layout1,
                 layout2,
                 layout3,
+                labeled7,
                 oneStepButton
         );
         mainLayout.setAlignment(Pos.CENTER);
@@ -160,6 +180,7 @@ public class ProgramRunningWindow {
         this.updateFileTableView();
         this.updatePrgStateIdsListView();
         this.updateSymTableView(currentPrgState.getSymTable());
+        this.updateSemaphoreTableView(currentPrgState.getSemaphoreTable());
     }
 
 
@@ -229,5 +250,12 @@ public class ProgramRunningWindow {
     private void updatePrgStateIdsListView() {
         prgStateIdsList = FXCollections.observableArrayList(controller.getRepo().getPrgList());
         prgStateIdsListView.setItems(prgStateIdsList);
+    }
+
+    private void updateSemaphoreTableView(MyISemaphoreTable semaphoreTable) {
+        List<Map.Entry<Integer, Pair<Integer, List<Integer>>>> semTableEntries = new ArrayList<>(semaphoreTable.getSemaphoreTable().entrySet());
+        semaphoreTableListItems = FXCollections.observableList(semTableEntries);
+        semaphoreTableView.setItems(semaphoreTableListItems);
+        semaphoreTableView.refresh();
     }
 }

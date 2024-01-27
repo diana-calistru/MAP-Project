@@ -21,6 +21,7 @@ public class PrgState {
     ArrayList<String> log;
     MyIDictionary<StringValue, BufferedReader> fileTable;
     MyIHeap<Value> heap;
+    MyISemaphoreTable semaphoreTable;
     private static int nextId = 1;
     private static synchronized int generateId() {
         return nextId++;
@@ -30,7 +31,7 @@ public class PrgState {
 
     IStmt originalProgram; // optional field, but good to have
 
-    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg, MyIDictionary<StringValue, BufferedReader> ftbl, MyIHeap<Value> hp) {
+    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg, MyIDictionary<StringValue, BufferedReader> ftbl, MyIHeap<Value> hp, MyISemaphoreTable semTable) {
         exeStack = stk;
         symTable = symtbl;
         out = ot;
@@ -39,35 +40,36 @@ public class PrgState {
         log = new ArrayList<>();
         fileTable = ftbl;
         heap = hp;
+        semaphoreTable = semTable;
 
         this.id = generateId();
     }
     public MyIStack<IStmt> getExeStack() {
         return exeStack;
     }
-    public void setExeStack(MyIStack<IStmt> stk) {
-        this.exeStack = stk;
-    }
-
     public MyIDictionary<String, Value> getSymTable() {
         return symTable;
-    }
-
-    public void setSymTable(MyIDictionary<String, Value> symtbl) {
-        this.symTable = symtbl;
     }
     public MyIList<Value> getOut() {
         return out;
     }
-    public void setOut(MyIList<Value> ot) {
-        this.out = ot;
-    }
     public MyIDictionary<StringValue, BufferedReader> getFileTable() {
         return fileTable;
     }
-
     public MyIHeap<Value> getHeap() { return this.heap; }
+    public MyISemaphoreTable getSemaphoreTable() { return this.semaphoreTable; }
     public int getId() { return this.id;}
+
+    public void setExeStack(MyIStack<IStmt> stk) {
+        this.exeStack = stk;
+    }
+    public void setSymTable(MyIDictionary<String, Value> symtbl) {
+        this.symTable = symtbl;
+    }
+    public void setOut(MyIList<Value> ot) {
+        this.out = ot;
+    }
+    public void setSemaphoreTable(MyISemaphoreTable semTable) { this.semaphoreTable = semTable; }
     public Boolean isNotComplete() { return !(exeStack.isEmpty()); }
 
     @Override
