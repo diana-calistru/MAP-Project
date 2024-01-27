@@ -21,6 +21,7 @@ public class PrgState {
     ArrayList<String> log;
     MyIDictionary<StringValue, BufferedReader> fileTable;
     MyIHeap<Value> heap;
+    MyIToySemaphoreTable toySemaphoreTable;
     private static int nextId = 1;
     private static synchronized int generateId() {
         return nextId++;
@@ -30,7 +31,7 @@ public class PrgState {
 
     IStmt originalProgram; // optional field, but good to have
 
-    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg, MyIDictionary<StringValue, BufferedReader> ftbl, MyIHeap<Value> hp) {
+    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg, MyIDictionary<StringValue, BufferedReader> ftbl, MyIHeap<Value> hp, MyIToySemaphoreTable toysem) {
         exeStack = stk;
         symTable = symtbl;
         out = ot;
@@ -38,6 +39,7 @@ public class PrgState {
         stk.push(prg);
         log = new ArrayList<>();
         fileTable = ftbl;
+        toySemaphoreTable = toysem;
         heap = hp;
 
         this.id = generateId();
@@ -48,11 +50,9 @@ public class PrgState {
     public void setExeStack(MyIStack<IStmt> stk) {
         this.exeStack = stk;
     }
-
     public MyIDictionary<String, Value> getSymTable() {
         return symTable;
     }
-
     public void setSymTable(MyIDictionary<String, Value> symtbl) {
         this.symTable = symtbl;
     }
@@ -65,8 +65,9 @@ public class PrgState {
     public MyIDictionary<StringValue, BufferedReader> getFileTable() {
         return fileTable;
     }
-
     public MyIHeap<Value> getHeap() { return this.heap; }
+    public MyIToySemaphoreTable getToySemaphore() { return toySemaphoreTable; }
+    public void setToySemaphore(MyIToySemaphoreTable newToySemaphoreTable) { this.toySemaphoreTable = newToySemaphoreTable; }
     public int getId() { return this.id;}
     public Boolean isNotComplete() { return !(exeStack.isEmpty()); }
 
