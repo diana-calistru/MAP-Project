@@ -21,6 +21,7 @@ import java.io.IOException;
 class Interpreter {
     public static void main(String[] args) throws MyException, FileNotFoundException, IOException {
 
+        /*
         IStmt line1 = new VarDeclStmt("v", new IntType());
         IStmt line2 = new VarDeclStmt("a", new RefType(new IntType()));
         IStmt line3 = new AssignStmt("v", new ValExp(new IntValue(10)));
@@ -61,7 +62,7 @@ class Interpreter {
         PrgState prg1 = new PrgState(exeStack, symTable, output, ex1, fileTable, heap);
         IRepository repo1 = new Repository(prg1, "log1.txt");
         Controller ctr1 = new Controller(repo1);
-        /*
+
         IStmt line1 = new VarDeclStmt("v", new RefType(new IntType()));
         IStmt line2 = new NewStmt("v", new ValExp(new IntValue(20)));
         IStmt line3 = new PrintStmt(new ReadHeapExp(new VarExp("v")));
@@ -118,12 +119,14 @@ class Interpreter {
         PrgState prg2 = new PrgState(exeStack2, symTable2, output2, ex2, fileTable2, heap2);
         IRepository repo2 = new Repository(prg2, "log1.txt");
         Controller ctr2 = new Controller(repo2);
-        */
+
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
         menu.addCommand(new RunExample("1", "example 1", ctr1));
         menu.show();
+
+         */
     }
 
 

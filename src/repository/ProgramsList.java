@@ -51,20 +51,37 @@ public class ProgramsList {
         uncheckedStmtList.add(stmt3);
          */
 
-        IStmt l1 = new VarDeclStmt("a", new RefType(new IntType()));
-        IStmt l2 = new NewStmt("a", new ValExp(new IntValue(20)));
+        IStmt l1 = new VarDeclStmt("v1", new RefType(new IntType()));
+        IStmt l2 = new VarDeclStmt("v2", new RefType(new IntType()));
+        IStmt l3 = new VarDeclStmt("v3", new RefType(new IntType()));
+        IStmt l4 = new VarDeclStmt("cnt", new IntType());
 
-        IStmt l3 = new ForStmt("v", new ValExp(new IntValue(0)), new ValExp(new IntValue(3)),
-                new ArithExp('+', new VarExp("v"), new ValExp(new IntValue(1))), new ForkStmt(
-                        new CompStmt(new PrintStmt(new VarExp("v")), new AssignStmt("v", new ArithExp('*', new VarExp("v"), new ReadHeapExp(new VarExp("a")))))));
+        IStmt l5 = new NewStmt("v1", new ValExp(new IntValue(2)));
+        IStmt l6 = new NewStmt("v2", new ValExp(new IntValue(3)));
+        IStmt l7 = new NewStmt("v3", new ValExp(new IntValue(4)));
 
-        IStmt l4 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
+        IStmt l8 = new NewLatchStmt("cnt", new ReadHeapExp(new VarExp("v2")));
 
-        IStmt l5 = new VarDeclStmt("v", new IntType());
+        IStmt l9 = new CompStmt(new WriteHeapStmt("v1", new ArithExp('*', new ReadHeapExp(new VarExp("v1")), new ValExp(new IntValue(10)))), new PrintStmt(new ReadHeapExp(new VarExp("v1"))));
+        IStmt l10 = new CountDownStmt("cnt");
 
-        IStmt for_example = new CompStmt(l5, new CompStmt(l1, new CompStmt(l2, new CompStmt(l3, l4))));
+        IStmt l11 = new CompStmt(new WriteHeapStmt("v2", new ArithExp('*', new ReadHeapExp(new VarExp("v2")), new ValExp(new IntValue(10)))), new PrintStmt(new ReadHeapExp(new VarExp("v2"))));
 
-        uncheckedStmtList.add(for_example);
+        IStmt l12 = new CompStmt(new WriteHeapStmt("v3", new ArithExp('*', new ReadHeapExp(new VarExp("v3")), new ValExp(new IntValue(10)))), new PrintStmt(new ReadHeapExp(new VarExp("v3"))));
+
+
+        IStmt l13 = new ForkStmt(new CompStmt(l9, new CompStmt(l10,
+                new ForkStmt(new CompStmt(l11, new CompStmt(l10, new CompStmt(
+                        new ForkStmt(l12), l10)))))));
+
+        IStmt l14 = new AwaitStmt("cnt");
+        IStmt l15 = new PrintStmt(new ValExp(new IntValue(100)));
+
+        IStmt stmt = new CompStmt(l1, new CompStmt(l2, new CompStmt(l3, new CompStmt(l4,
+                new CompStmt(l5, new CompStmt(l6, new CompStmt(l7, new CompStmt(l8,
+                        new CompStmt(l13, new CompStmt(l14, new CompStmt(l15, l10)))))))))));
+
+        uncheckedStmtList.add(stmt);
     }
     private void addStmts() {
 
