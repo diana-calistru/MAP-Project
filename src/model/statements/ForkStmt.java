@@ -20,7 +20,7 @@ public class ForkStmt implements IStmt {
     @Override
     public PrgState execute(PrgState state) throws MyException, FileNotFoundException, IOException {
         MyStack<IStmt> stack = new MyStack<>();
-        PrgState forked = new PrgState(stack, state.getSymTable().deepcopy(), state.getOut(), argument, state.getFileTable(), state.getHeap());
+        PrgState forked = new PrgState(stack, state.getSymTable().deepcopy(), state.getOut(), argument, state.getFileTable(), state.getHeap(), state.getToySemaphore());
         return forked;
     }
 

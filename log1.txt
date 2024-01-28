@@ -595,3 +595,1920 @@ PrgState ID: 2
 			[FILE TABLE]
 
 --------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(v1(Ref(Int));(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))
+
+			[SYMBOL TABLE]
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	v1(Ref(Int))
+	(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+
+			[SYMBOL TABLE]
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	v1(Ref(Int))
+	(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+
+			[SYMBOL TABLE]
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+
+			[SYMBOL TABLE]
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+
+			[SYMBOL TABLE]
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	cnt(Int)
+	(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+
+			[SYMBOL TABLE]
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	cnt(Int)
+	(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+
+			[SYMBOL TABLE]
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	new(v1, 2)
+	(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	new(v1, 2)
+	(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(v1(Ref(Int));(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))
+
+			[SYMBOL TABLE]
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	v1(Ref(Int))
+	(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+
+			[SYMBOL TABLE]
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	v1(Ref(Int))
+	(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+
+			[SYMBOL TABLE]
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+
+			[SYMBOL TABLE]
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(cnt(Int);(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+
+			[SYMBOL TABLE]
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	cnt(Int)
+	(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+
+			[SYMBOL TABLE]
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	cnt(Int)
+	(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+
+			[SYMBOL TABLE]
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(new(v1, 2);(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	new(v1, 2)
+	(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	new(v1, 2)
+	(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (0, Int)
+
+			[HEAP]
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(newSemaphore(cnt, rH(v1), 1);(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	newSemaphore(cnt, rH(v1), 1)
+	(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	newSemaphore(cnt, rH(v1), 1)
+	(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))
+
+			[SYMBOL TABLE]
+	cnt -> 0
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))));(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt)))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))))
+	(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))))
+	(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))));(acquire(cnt);(print(rH(v1)-1);release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(acquire(cnt);(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))))
+	(acquire(cnt);(print(rH(v1)-1);release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	Fork the following: (acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))))
+	(acquire(cnt);(print(rH(v1)-1);release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(acquire(cnt);(print(rH(v1)-1);release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	(acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(acquire(cnt);(print(rH(v1)-1);release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(wH(v1, rH(v1)*10);(print(rH(v1));release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	(acquire(cnt);(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	wH(v1, rH(v1)*10)
+	(print(rH(v1));release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	wH(v1, rH(v1)*10)
+	(print(rH(v1));release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 2
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(print(rH(v1));release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	(print(rH(v1));release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	print(rH(v1))
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	print(rH(v1))
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	acquire(cnt)
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 2
+			[EXECUTION STACK]
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	(wH(v1, rH(v1)*10);(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt))))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	wH(v1, rH(v1)*10)
+	(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	wH(v1, rH(v1)*10)
+	(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 20
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 200
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 200
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 200
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	(wH(v1, rH(v1)*2);(print(rH(v1));release(cnt)))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 200
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 200
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	wH(v1, rH(v1)*2)
+	(print(rH(v1));release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 200
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 200
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	wH(v1, rH(v1)*2)
+	(print(rH(v1));release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 200
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	(print(rH(v1));release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	(print(rH(v1));release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	print(rH(v1))
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	print(rH(v1))
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 3
+			[EXECUTION STACK]
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	acquire(cnt)
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	(print(rH(v1)-1);release(cnt))
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	print(rH(v1)-1)
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	print(rH(v1)-1)
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+	399
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+	release(cnt)
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+	399
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------
+--------------------[START EXECUTION]------------------
+PrgState ID: 1
+			[EXECUTION STACK]
+
+			[SYMBOL TABLE]
+	cnt -> 1
+	v1 -> (1, Int)
+
+			[HEAP]
+	1: 400
+
+			[OUTPUT LOG]
+	20
+	400
+	399
+
+			[FILE TABLE]
+
+--------------------[END EXECUTION]--------------------

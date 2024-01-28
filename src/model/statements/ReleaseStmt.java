@@ -44,6 +44,11 @@ public class ReleaseStmt implements IStmt {
 
     @Override
     public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
-        return null;
+        return typeEnv;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("release(%s)", id);
     }
 }
