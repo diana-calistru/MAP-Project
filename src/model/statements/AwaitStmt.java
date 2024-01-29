@@ -15,20 +15,20 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class AwaitStmt implements IStmt {
-    private final String id;
+    private final String var;
     private static final Lock lock = new ReentrantLock();
     public AwaitStmt(String s) {
-        this.id = s;
+        this.var = s;
     }
     @Override
     public PrgState execute(PrgState state) throws MyException, FileNotFoundException, IOException {
         lock.lock();
         MyIDictionary<String, Value> symTable = state.getSymTable();
         MyILatchTable latchTable = state.getLatchTable();
-        if (symTable.isDefined(id)) {
-            IntValue index = (IntValue) symTable.lookup(id);
-            if (latchTable.containsKey(index.getVal())) {
-                if (latchTable.get(index.getVal()) != 0) {
+        if (symTable.isDefined(var)) {
+            IntValue foundIndex = (IntValue) symTable.lookup(var);
+            if (latchTable.containsKey(foundIndex.getVal())) {
+                if (latchTable.get(foundIndex.getVal()) != 0) {
                     state.getExeStack().push(this);
                 }
             } else throw new MyException("Index not found in the latch table!");
@@ -39,13 +39,13 @@ public class AwaitStmt implements IStmt {
 
     @Override
     public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
-        if (typeEnv.lookup(id).equals(new IntType())) {
+        if (typeEnv.lookup(var).equals(new IntType())) {
             return typeEnv;
-        } else throw new MyException(String.format("%s is not of int type!", id));
+        } else throw new MyException(String.format("%s is not of int type!", var));
     }
 
     @Override
     public String toString() {
-        return String.format("await(%s)", id);
+        return String.format("await(%s)", var);
     }
 }

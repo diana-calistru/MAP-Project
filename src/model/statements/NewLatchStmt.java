@@ -17,11 +17,11 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class NewLatchStmt implements IStmt {
-    private final String id;
+    private final String var;
     private final Exp exp;
     private static final Lock lock = new ReentrantLock();
     public NewLatchStmt(String s, Exp e) {
-        this.id = s;
+        this.var = s;
         this.exp = e;
     }
     @Override
@@ -31,28 +31,28 @@ public class NewLatchStmt implements IStmt {
         MyIHeap<Value> heap = state.getHeap();
         MyILatchTable latchTable = state.getLatchTable();
 
-        IntValue expVal = (IntValue) exp.eval(symTable, heap);
+        IntValue num1 = (IntValue) exp.eval(symTable, heap);
         int freeAddress = latchTable.getFreeAddress();
-        latchTable.put(freeAddress, expVal.getVal());
+        latchTable.put(freeAddress, num1.getVal());
 
-        if (symTable.isDefined(id)) {
-            symTable.update(id, new IntValue(freeAddress));
-        } else throw new MyException(String.format("%s is not defined in the symbol table!", id));
+        if (symTable.isDefined(var)) {
+            symTable.update(var, new IntValue(freeAddress));
+        } else throw new MyException(String.format("%s is not defined in the symbol table!", var));
         lock.unlock();
         return null;
     }
 
     @Override
     public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
-        if (typeEnv.lookup(id).equals(new IntType())) {
+        if (typeEnv.lookup(var).equals(new IntType())) {
             if (exp.typecheck(typeEnv).equals(new IntType())) {
                 return typeEnv;
             } else throw new MyException("Expression doesn't have the int type!");
-        } else throw new MyException(String.format("%s is not of int type!", id));
+        } else throw new MyException(String.format("%s is not of int type!", var));
     }
 
     @Override
     public String toString() {
-        return String.format("newLatch(%s, %s)", id, exp);
+        return String.format("newLatch(%s, %s)", var, exp);
     }
 }
