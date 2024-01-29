@@ -94,7 +94,6 @@ public class ProgramRunningWindow {
         initializeWindow();
 
     }
-
     private void initializeWindow() {
         stage.setTitle("Program Details");
         Label l1 = new Label("Program State Ids");
